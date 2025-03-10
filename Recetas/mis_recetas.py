@@ -23,7 +23,18 @@ def inicio():
     print(f"Las recetas se encuentran en {mi_ruta}")
     print(f"Total recetas: {contar_recetas(mi_ruta)}")
 
-
+    eleccion_menu = 'x'
+    while not eleccion_menu.isnumeric() or int(eleccion_menu) not in range(1, 7 ):
+        print("Elige una opcion: ")
+        print('''
+        [1] -Leer receta
+        [2] - Crear receta nueva
+        [3] - Crear categoria nueva
+        [4] - Eliminar receta
+        [5] - Eliminar categoria
+        [6] - Salir del programa''')
+        eleccion_menu = input()
+    return (eleccion_menu)
 
 inicio()
 
