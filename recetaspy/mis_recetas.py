@@ -34,7 +34,7 @@ def inicio():
         [5] - Eliminar categoria
         [6] - Salir del programa''')
         eleccion_menu = input()
-    return (eleccion_menu)
+    return int(eleccion_menu)
 
 def mostrar_categorias(ruta):
     print("categorias:")
