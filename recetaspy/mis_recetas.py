@@ -115,11 +115,13 @@ def crear_categoria(ruta):
             print("Lo siento, esa categoria ya existe")
 
 def eliminar_receta(receta):
-    Path(receta).unlink()
+    receta_path = Path(receta)
+    receta_path.unlink()
     print(f"La receta {receta.name} Ha sido eliminada")
 
 def eliminar_categoria(categoria):
-    Path(categoria).rmdir()
+    categoria_path = Path(categoria)
+    categoria_path.rmdir()
     print(f"La categoria {categoria.name} ha sido eliminado")
 
 def volver_inicio():
@@ -140,6 +142,8 @@ while not finalizar_programa:
         mi_categoria = elegir_categoria(mis_categorias)
         # mostrar recetas
         mis_recetas = mostrar_recetas(mi_categoria)
+        if len(mis_recetas) < 1:
+            print("no hay recetas en esta categoria.")
         # elegir recetas
         mi_receta = elegir_recetas(mis_recetas)
         # leer receta
