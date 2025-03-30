@@ -50,7 +50,7 @@ def mostrar_todo():
     print(f"Fecha de Busqueda: {hoy.day}/{hoy.month}/{hoy.year}")
     print('\n')
     print('ARCHIVO\t\t\tNRO. SERIE')
-    print('----------\t\t\t----------')
+    print('-------\t\t\t----------')
     for a in archivos_encontrados:
         print(f"{a}\t{numeros_encontrados[indice]}")
         indice += 1
