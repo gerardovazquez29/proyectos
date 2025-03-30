@@ -64,7 +64,6 @@ def mostrar_todo():
 crear_listas()
 mostrar_todo()
 
-
 """
 
 --------------------------------------------------
