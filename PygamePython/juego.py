@@ -4,6 +4,9 @@ import pygame
 import random
 import math
 from pygame import mixer
+import io
+
+
 
 # Inicializar Pygame
 pygame.init()
